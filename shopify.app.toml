@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "b1bf97851105a492e6a1fca8ffa6b5be"
+name = "first-app"
+handle = "first-app-1230"
+application_url = "https://slightly-deal-finds-sentence.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "iasraf.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://slightly-deal-finds-sentence.trycloudflare.com/auth/callback",
+  "https://slightly-deal-finds-sentence.trycloudflare.com/auth/shopify/callback",
+  "https://slightly-deal-finds-sentence.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
